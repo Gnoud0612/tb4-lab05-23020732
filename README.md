@@ -1,10 +1,6 @@
 # Bài thực hành 05 — TurtleBot 4, Nav2 và YOLO
 
-Nguyễn Tùng Dương — MSSV **23020732**. Ubuntu 22.04, ROS 2 Humble, Gazebo Fortress, TurtleBot 4 Lite, world **maze**. Dùng nguyên bản đồ bài 04; không chạy SLAM trong bài này.
-
 ## 1. Cài đặt và build
-
-Máy cần có ROS 2 Humble Desktop, Gazebo Fortress và kho APT tương ứng như bài 04. Thay `URL_REPOSITORY` bằng URL repository Public của bài.
 
 ```bash
 mkdir -p ~/workspaces
@@ -21,8 +17,6 @@ bash scripts/setup_yolo.sh
 bash scripts/build.sh
 ```
 
-YOLOv8n chạy CPU. Các phiên bản PyTorch, Ultralytics, OpenCV và NumPy được cố định trong script; NumPy 1.x tương thích với `cv_bridge` của Humble. Mô hình 3D và trọng số đã kèm trong repository; nguồn/SHA256 nằm ở `models/osrf_manifest.json`, `weights/manifest.json`.
-
 Trong **mỗi terminal mới**:
 
 ```bash
@@ -30,7 +24,6 @@ cd ~/workspaces/tb4_lab05
 source scripts/env.bash
 ```
 
-Trên máy đang làm bài, thư mục dự án là `~/workspaces/workspace/lab05`; thay lệnh `cd` tương ứng. Bài này dùng ROS domain **55**, tách khỏi bài 04.
 
 ## 2. Simulation và localization — Terminal A
 
@@ -38,7 +31,6 @@ Trên máy đang làm bài, thư mục dự án là `~/workspaces/workspace/lab0
 bash scripts/run.sh navigation world:=maze model:=lite
 ```
 
-Mở Gazebo, RViz, map server, AMCL và Nav2. `maps/map.yaml` được nạp tự động. Nếu máy chậm, chạy Gazebo không GUI nhưng vẫn có camera, RViz và physics:
 
 ```bash
 bash scripts/run.sh navigation world:=maze model:=lite headless:=true
