@@ -59,11 +59,10 @@ Node `waypoint_mission` gọi Action `/navigate_to_pose`, chờ `SUCCEEDED` rồ
 
 | Thứ tự | x (m) | y (m) | yaw (rad) |
 |---|---:|---:|---:|
-| Goal 1 — tây bắc | -8.0 | 8.8 | 0.0 |
-| Goal 2 — tây nam | -8.5 | -9.0 | 2.2 |
-| Goal 3 — đông nam | 8.5 | -9.0 | 2.08 |
+| Goal 1 | -8.0 | 8.8 | 0.0 |
+| Goal 2 | -8.5 | -9.0 | 2.2 |
+| Goal 3 | 8.5 | -9.0 | 2.08 |
 
-Tọa độ thuộc frame `map`, cấu hình tại `src/tb4_yolo_nav/config/goals.yaml`. Thông tin thực thi lưu ở `evidence/mission.json`; kết quả YOLO ở `evidence/yolo/`.
 
 Muốn kiểm tra độc lập các goal, mở Terminal D đã source môi trường:
 
