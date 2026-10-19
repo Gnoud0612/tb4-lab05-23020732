@@ -1,0 +1,6 @@
+# Install the CPU PyTorch wheels first using scripts/setup_yolo.sh.
+torch==2.5.1+cpu
+torchvision==0.20.1+cpu
+numpy==1.24.4
+opencv-python==4.10.0.84
+ultralytics==8.3.0
