@@ -1,0 +1,11 @@
+frame_id: map
+# Pose after official undock from the same spawn used in lab 04.
+initial_pose: {x: -0.35, y: 0.0, yaw: 3.141592653589793}
+# Selected from free regions of the unchanged lab 04 map. Yaw is in radians.
+goals:
+  - {name: Goal_1_NorthWest, x: -8.0, y: 8.8, yaw: 0.0}
+  - {name: Goal_2_SouthWest, x: -8.5, y: -9.0, yaw: 2.2}
+  - {name: Goal_3_SouthEast, x: 8.5, y: -9.0, yaw: 2.08}
+dwell_wall_seconds: 10.0
+goal_timeout_wall_seconds: 900.0
+startup_timeout_wall_seconds: 180.0

@@ -1,0 +1,25 @@
+# Apply only through Gazebo Fortress's official sensor /set_rate services.
+# Units: Hz of simulation time. Reapply after every simulator restart.
+# The official sensor geometry, physics, TF and motion controller stay intact.
+profiles:
+  - name: lidar
+    service_pattern: '/sensor/rplidar/scan/set_rate$'
+    rate_hz: 10.0
+    expected_count: 1
+  - name: cliff
+    service_pattern: '/sensor/cliff_[^/]+/scan/set_rate$'
+    rate_hz: 10.0
+    expected_count: 4
+  - name: infrared
+    service_pattern: '/sensor/ir_intensity_[^/]+/scan/set_rate$'
+    rate_hz: 5.0
+    expected_count: 7
+  - name: camera
+    service_pattern: '/sensor/rgbd_camera/set_rate$'
+    rate_hz: 2.0
+    expected_count: 1
+  - name: dock
+    service_pattern: '/sensor/(green_buoy|red_buoy|yellow_buoy|halo)/scan/set_rate$'
+    # Official dock emitters already run at 1 Hz. Gazebo rejects rates above it.
+    rate_hz: 1.0
+    expected_count: 4

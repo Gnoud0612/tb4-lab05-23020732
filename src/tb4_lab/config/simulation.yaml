@@ -1,0 +1,30 @@
+# Describes the optional profile implemented by scripts/apply_sim_profile.sh.
+# Invoke after low_resource.sh and before undock.sh, with --world maze.
+# A direct single-parameter ros2 param set can be rejected by create3_sim 2.1.0.
+# The helper sends an atomic pair with the current, unchanged safety_override.
+simulation_profile:
+  world: maze
+  flat_world_only: true
+  application: "scripts/apply_sim_profile.sh --world maze"
+  intended_change:
+    reflexes.REFLEX_CLIFF: false
+  preserved_parameters:
+    safety_override: "read current value; preserve it in the atomic request"
+    reflexes_enabled: true
+    reflexes.REFLEX_BUMP: true
+    reflexes.REFLEX_STUCK: true
+    reflexes.REFLEX_WHEEL_DROP: true
+  measured_reason: >-
+    In the official flat maze simulation, front_right and side_left cliff
+    scans had no finite ray return and generated CLIFF hazards. The official
+    create3_sim 2.1.0 sensor implementation compares the minimum range against
+    a 0.03 m detection threshold. The rendering cause was not established.
+  source_detection_threshold_m: 0.03
+  verification: >-
+    Check the atomic service success result and read back CLIFF=false,
+    unchanged safety_override and enabled, unchanged remaining reflexes.
+    Save the actual result to evidence/sim_profile.json.
+  scope: >-
+    Only the official flat maze simulation without drop-offs. Hazard messages
+    still publish, and BUMP, STUCK and WHEEL_DROP reflexes stay enabled.
+    No robot motion is commanded and an existing reflex is not canceled.

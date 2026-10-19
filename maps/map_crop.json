@@ -1,0 +1,25 @@
+{
+  "operation": "Pixel crop, no drawing, interpolation, filling or pixel changes",
+  "yaml_free_threshold_before": 0.196,
+  "yaml_free_threshold_after": 0.196,
+  "source": "maps/map_raw.yaml",
+  "source_sha256": "27c54ede0432ef9c25d966114ed11ebcde57caab93441fc27f27eeda0ccf7035",
+  "output": "maps/map.yaml",
+  "requested_bounds": [
+    -11.0,
+    -11.0,
+    11.0,
+    11.0
+  ],
+  "original_dimensions": [
+    663,
+    716
+  ],
+  "retained_pixel_box": [
+    162,
+    110,
+    602,
+    550
+  ],
+  "output_sha256": "a8937976d443fd598749e5383d005bd94795fa8d16943a97c9388b83a707246c"
+}

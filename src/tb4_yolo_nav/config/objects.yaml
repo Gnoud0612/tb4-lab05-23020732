@@ -1,0 +1,6 @@
+# Newly added physical objects. The maze walls and the lab 04 map stay unchanged.
+world: maze
+objects:
+  - {name: lab05_person_nw, model: person_standing, x: -4.7, y: 8.8, z: 0.0, yaw: 1.5707963267948966}
+  - {name: lab05_hydrant_sw, model: fire_hydrant, x: -9.5, y: -7.6, z: 0.0, yaw: 0.0}
+  - {name: lab05_hydrant_se, model: fire_hydrant, x: 7.4, y: -7.3, z: 0.0, yaw: 0.0}

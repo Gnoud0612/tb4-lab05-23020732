@@ -1,0 +1,94 @@
+{
+  "repository": "https://github.com/osrf/gazebo_models",
+  "commit": "8163eb4b5e7e21985c6591d1c0bfb56468c0093f",
+  "files": [
+    {
+      "file": "LICENSE",
+      "sha256": "776eee6c1a315c1acca92898edb797a9549c71da0e41dcb0eb6864df6301678e"
+    },
+    {
+      "file": "README.md",
+      "sha256": "06cdbc00ae27096073e2d1c294a17db1fd9c0588eed166a667c65c4f9bcf9369"
+    },
+    {
+      "file": "fire_hydrant/materials/textures/fire_hydrant_diffuse.png",
+      "sha256": "b089dc88690961c9aaaca7637517333635ee3d83def47b752902c8a9a5b4b2e5"
+    },
+    {
+      "file": "fire_hydrant/materials/textures/fire_hydrant_spec.png",
+      "sha256": "cc1dc313cb9e9b905edd83d317f290335060fe0d98cc9cbabf56363597373395"
+    },
+    {
+      "file": "fire_hydrant/meshes/fire_hydrant.dae",
+      "sha256": "62619b63da14653e245f7bba88c7417774518962f4ebc57def210ed8e57a937c"
+    },
+    {
+      "file": "fire_hydrant/model-1_4.sdf",
+      "sha256": "4a690cfac7ee5b9f3eb1f6b3730a0918bbd0978f405a1ea466691904c6fd7cf3"
+    },
+    {
+      "file": "fire_hydrant/model.config",
+      "sha256": "44d474a31261ddc27c8d25ad6fc4aba4ae1225a1195cbf42810ffae889f43a20"
+    },
+    {
+      "file": "fire_hydrant/model.sdf",
+      "sha256": "661b5ceb48ec1fa49e294116979c38166a035cc70fdddc84c6ae35ccea18ae33"
+    },
+    {
+      "file": "person_standing/materials/textures/eyebrow001-unmodified.png",
+      "sha256": "bd9d94033a85c16af38fb135f5fed4ab2e1a26982db952826e58a2672c8c9a9c"
+    },
+    {
+      "file": "person_standing/materials/textures/eyebrow001.png",
+      "sha256": "b2b15dd52470d6d073d18ebf56bcb1f3b45567cd42a2c75557c0ed2adc0f1ec1"
+    },
+    {
+      "file": "person_standing/materials/textures/green_eye.png",
+      "sha256": "97b79fb62dde7211c142ce398b9506d42a74bdc478230e90ec69377ffdce4e22"
+    },
+    {
+      "file": "person_standing/materials/textures/jeans01_normals.png",
+      "sha256": "2aa953834fa0bcf240fe069dc1ef283d801573e077bc5f9da04847370e9837d1"
+    },
+    {
+      "file": "person_standing/materials/textures/jeans_basic_diffuse.png",
+      "sha256": "c4b2f9126873078ecf8a3678e28622196fa6cb47e131b6067d6ffe81919b0ca6"
+    },
+    {
+      "file": "person_standing/materials/textures/male02_diffuse_black-unmodified.png",
+      "sha256": "d3ef0f625df4d5cea6c9cd89e00b9e86c3b488d63672f9ed5b1327a17abd60dc"
+    },
+    {
+      "file": "person_standing/materials/textures/male02_diffuse_black.png",
+      "sha256": "37c166c53575369f57cf233e775f87ef225b3fe9f66ff7ba34b3abb12dcd46be"
+    },
+    {
+      "file": "person_standing/materials/textures/teeth.png",
+      "sha256": "d0afb57869c6fbb56b98f5efc4aec629ee7593e70d8dd2bfb9de923acfb65f43"
+    },
+    {
+      "file": "person_standing/materials/textures/tshirt02_normals.png",
+      "sha256": "f31407a3f8ae20736f8f9693906f6ad64569032bc4afd0798c305526fa51d33d"
+    },
+    {
+      "file": "person_standing/materials/textures/tshirt02_texture.png",
+      "sha256": "932e21f76307fda21692a3b4db03fcddc68127d410b4ccbf9fb5cf95ecfbc1b1"
+    },
+    {
+      "file": "person_standing/materials/textures/young_lightskinned_male_diffuse.png",
+      "sha256": "4233a4e1e2d423daf8e5aa25521df93253be54b0ab6490147afae39b076f4fcb"
+    },
+    {
+      "file": "person_standing/meshes/standing.dae",
+      "sha256": "bc20dd2cd005d70a35627e38cb52d4c84f3d66034b196efa28e11b10b3295c15"
+    },
+    {
+      "file": "person_standing/model.config",
+      "sha256": "5867d0c4417ded2c20d6d70857ac638eb5c16b460a0af3140dc9552c2f9e5a34"
+    },
+    {
+      "file": "person_standing/model.sdf",
+      "sha256": "bd2499f97a041d557881c2303a6b314c15df6e7f16f34413d19ee97834720cec"
+    }
+  ]
+}
